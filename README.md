@@ -1,6 +1,6 @@
 # Tilanvarausjarjestelma
 
-###Työhaastattattelussa annettu harjoitustehtävä
+### Työhaastattattelussa annettu harjoitustehtävä
 
 - Sisältää UML-luokkakaavion tilanvarausjärjestelmää varten.
 - Asiakkaan kirjautumis- ja tilanvarausruudusta on toteutettu rautalankamallit.
