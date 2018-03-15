@@ -27,8 +27,10 @@ public class TilausMoottori {
     protected boolean VaraaTila(Varaus var) throws SQLException, Exception {
         VarausDao varauksetDao = new VarausDao(db);
         List<Varaus> varaukset = null;
+       //haetaan varauksenet Tilan mukaan
+        
         try {
-            varaukset = varauksetDao.findAll();
+            varaukset = varauksetDao.findByTila(var.getTila());
         } catch (Exception ex) {
             System.out.println("Can not list" + varauksetDao.getClass());
         }
@@ -36,7 +38,7 @@ public class TilausMoottori {
         if (varaukset == null) {
             return false;
         }
-
+        
         if (varaukset.isEmpty()) {
             varauksetDao.save(var);
             return true;

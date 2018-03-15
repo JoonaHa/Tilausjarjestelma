@@ -15,10 +15,11 @@ public class Varaus {
     private int id;
     private String nimi;
     private Asiakas asiakas;
+    private Tila tila;
     private Date Alkaa;
     private Date Loppuu;
 
-    public Varaus(int id, String nimi, Asiakas asiakas, Date Alkaa, Date Loppuu) {
+    public Varaus(int id, String nimi, Asiakas asiakas,Tila tila, Date Alkaa, Date Loppuu) {
         this.id = id;
         this.nimi = nimi;
         this.asiakas = asiakas;
@@ -37,6 +38,12 @@ public class Varaus {
     public Asiakas getAsiakas() {
         return asiakas;
     }
+
+    public Tila getTila() {
+        return tila;
+    }
+    
+    
 
     public Date getAlkaa() {
         return Alkaa;
