@@ -1,3 +1,4 @@
+```sql
 CREATE TABLE Asiakas (
 	Id integer PRIMARY KEY,
 	nimi varchar(100),
@@ -31,3 +32,4 @@ CREATE TABLE TilaVarustelu(
 	FOREIGN KEY (Tila_nimi) REFERENCES Tila(nimi), 
 	FOREIGN KEY (varustelu_id) REFERENCES Varustelu(id)
 );
+```
